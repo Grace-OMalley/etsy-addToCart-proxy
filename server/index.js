@@ -9,6 +9,7 @@ const Review = 'http://localhost:1128';
 const Images = 'http://localhost:8080';
 
 app.use(express.static('client/dist'));
+app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
